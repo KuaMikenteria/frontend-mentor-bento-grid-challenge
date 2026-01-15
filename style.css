@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(256, 100%, 97%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  max-width: 1000px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card 1 - Social Media 10x Faster */
+.title-card-rating {
+  background-color: hsl(256, 67%, 59%);
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: 1.5rem;
+}
+
+.title-card-rating p:first-of-type {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.title-card-rating span {
+  color: hsl(39, 100%, 71%);
+}
+
+.title-card-rating img {
+  width: 120px;
+  margin: 15px 0;
+}
+
+.title-card-rating p:last-child {
+  opacity: 0.8;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Card 2 - Create and schedule content */
+.create-sched-post {
+  background: hsl(31, 66%, 93%);
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.create-sched-post p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(256, 67%, 59%);
+}
+
+.create-sched-post span i {
+  font-style: italic;
+}
+
+.create-sched-post img {
+  width: 180px;
+  align-self: center;
+  margin-top: auto;
+}
+
+/* Card 3 - Schedule to social media */
+.analytics {
+  background-color: hsl(254, 88%, 90%);
+  grid-column: 4;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.analytics p:first-of-type {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.analytics img {
+  width: 180px;
+  align-self: center;
+}
+
+.analytics p:last-child {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Card 4 - Write your content using AI */
+.writing-content {
+  background-color: hsl(39, 100%, 71%);
+  grid-column: 1;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.writing-content p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.writing-content img {
+  width: 150px;
+  align-self: center;
+}
+
+/* Card 5 - Manage multiple accounts */
+.manage-acc {
+  background-color: white;
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.manage-acc img {
+  width: 140px;
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.manage-acc p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Card 6 - Audience growth */
+.audience-growth {
+  background-color: white;
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.audience-growth p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.audience-growth span {
+  font-size: 2.5rem;
+  color: hsl(256, 67%, 59%);
+}
+
+.audience-growth img {
+  width: 120px;
+}
+
+/* Card 7 - Maintain consistent schedule */
+.maintain-sched {
+  background-color: hsl(39, 100%, 71%);
+  grid-column: 3;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.maintain-sched p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.maintain-sched img {
+  width: 140px;
+  align-self: center;
+}
+
+/* Card 8 - Grow followers */
+.grow-followers {
+  background-color: hsl(256, 67%, 59%);
+  grid-column: 3 / span 2;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  gap: 20px;
+}
+
+.grow-followers img {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.grow-followers p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+/* Attribution */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 20px;
+}
+
+.attribution {
+  font-size: 14px;
+  color: #333;
+}
+
+.attribution a {
+  color: hsl(256, 67%, 59%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    max-width: 90%;
+  }
+
+  .title-card-rating {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .create-sched-post {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .analytics {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .writing-content {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .manage-acc {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .audience-growth {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .maintain-sched {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .grow-followers {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    gap: 15px;
+    max-width: 95%;
+  }
+
+  .title-card-rating {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .create-sched-post {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .analytics {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .writing-content {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .manage-acc {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .audience-growth {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .maintain-sched {
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .grow-followers {
+    grid-column: 1;
+    grid-row: 8;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .grow-followers img {
+    width: 140px;
+  }
+
+  .grow-followers p {
+    font-size: 1.2rem;
+  }
+}
