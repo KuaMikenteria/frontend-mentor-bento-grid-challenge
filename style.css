@@ -259,7 +259,9 @@ footer {
 }
 
 .attribution a:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: hsl(256, 57%, 33%);
+  border-radius: 5px;
 }
 
 /* Tablet Responsive */
